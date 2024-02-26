@@ -1,0 +1,243 @@
+
+/* NAV */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #06203e;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    font-family: "Poppins", sans-serif;
+    margin-top: 0px;
+    align-items: center;
+    color: #202020;
+    background-color: #fff3ca;
+}
+
+.logo img{
+    width: 80px;
+}
+
+.nav-itens {
+    list-style: none;
+    display: flex;
+} 
+
+.nav-itens>li>a {
+    padding-left: 20px;
+    color: #06203e;
+    background-color: #fff3ca;
+    text-decoration: none;
+    font-size: 20px;
+    transition: .5s all;
+    font-weight: bold;
+}
+
+.nav-itens>li>a:hover {
+    color: #1669c9;
+}
+
+.login {
+    padding: 10px 40px;
+    font-size: 15px;
+    border: none;
+    color: #06203e;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #fff3ca;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    transition: .5s all;
+}
+
+.login:hover {
+    transition: 1s background;
+    transform: scale(1.05);
+    color: #1669c9;
+}
+
+.cadastro {
+    padding: 10px 40px;
+    font-size: 15px;
+    border: none;
+    color: #fff3ca;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #06203e;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    transition: .5s all;
+}
+
+.cadastro:hover {
+    background-color: #0b3b72;
+    transform: scale(1.1);
+}
+
+/* CONTAINER-BANNER */
+
+.container-banner {
+    width: 50%;
+    height: 500px;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 450px;
+    margin-top: 50px;
+}
+
+.container-banner img {
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 8px solid #fff3ca;
+    transition: all ease-in-out 1s;
+    cursor: pointer;
+}
+
+.container-banner img:hover {
+    width: 100%;
+}
+
+/* CARD */
+
+/* body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    height: 100vh;
+    background: #221d2d;
+    color: #fdfcfd;
+    font-family: "Poppins", sans-serif;
+} */
+
+.card {
+    display: flex;
+    align-items: center;
+    width: 1300px;
+    height: 600px;
+    max-width: 1500px;
+    padding: 50px 30px 50px 20px;
+    background: #121017;
+    border-radius: 24px;
+    margin-top: 50px;
+    margin-left: 280px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img {
+    max-width: 500px;
+    width: 90vw;
+    height: 500px;
+    object-fit: cover;
+    margin-left: -120px;
+    margin-right: -30px;
+    border-radius: inherit;
+    box-shadow: 0 60px 40px rgb(0, 0, 0 / 8%);
+    animation: pulse 1s infinite alternate;
+}
+
+.card h2 {
+    font-size: 26px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-right: 30px;
+    margin-bottom: 10px;
+    margin-left: 60px;
+    color: #fff3ca;
+    font-weight: bold;
+}
+
+.card h3 {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    opacity: 0.75;
+    margin-left: 60px;
+    color: #fff3ca;
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    opacity: 0.5;
+    margin-left: 60px;
+    color: #fff3ca;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.card a {
+    display: grid;
+    place-items: center;
+    border: 0;
+    background: linear-gradient(to right, #06203e, #0b3b72);
+    color: #f8f8f8;
+    padding: 15px 20px;
+    font-size: 16px;
+    border-radius: 40px;
+    margin-left: 60px;
+    transition: .5s all;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover {
+    transform: scale(1.05);
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
+@media (width <= 600px) {
+    .card {
+        margin: 0 40px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 60px;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .card h2 {
+        margin-right: 0;
+    }
+
+    .card img {
+        margin: -100px 0 30px 0;
+        width: 100%;
+        max-width: 1000px;
+    }
+
+    .card p {
+        max-width: 360px;
+    }
+}
+
+@media (width <= 440px) {
+    .card img {
+        height: 45vw;
+        width: 45vw;
+        border-radius: 50%;
+        margin-top: -140px;
+    }
+}
