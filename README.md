@@ -1,5 +1,6 @@
 <img src="https://github.com/Gabrielmemoli/Loja-Sneakers/blob/main/assets/imagens/logo_sem_fundo.png" width="300" /> 
-Hanover Shoes - Loja de Sneakers
+
+# **Hanover Shoes - Loja de Sneakers**
 
 Bem-vindo ao repositório da Hanover Shoes! Somos uma loja especializada em sneakers de alta qualidade e design exclusivo. Este repositório contém todos os recursos e informações necessárias para entender e contribuir para o nosso projeto.
 
