@@ -90,15 +90,15 @@ nav {
 
 a {
     text-decoration: none;
-    color: black;
+    color: #06203e;
 }
 
 main {
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../assets/imagens/banner.jpg);
+    background-image: url(../assets/imagens/imagem_cadastro.jpg);
 }
 
 .login-container {
@@ -129,11 +129,11 @@ main {
 }
 
 .form-login {
-    background-color: white;
+    background-color: #fff3ca;
 }
 
 .form-register {
-    background-color: white;
+    background-color: #fff3ca;
     transform: translateX(-100%);
     z-index: -1;
     opacity: 0;
@@ -168,13 +168,14 @@ main {
     align-items: center;
     border-radius: 50%;
     font-size: 1.2rem;
-    background-color: #F3F3F3;
+    background-color: #06203e;
     box-shadow: 0 4px 4px #0004;
     transition: .5s all;
+    color: #fff3ca;
 }
 
 .social-icon:hover {
-    background-color: tomato;
+    background-color: #103d70;
     transform: translate(0, -15%);
     color: #fff;
 }
@@ -190,7 +191,8 @@ main {
     height: 40px;
     padding: 10px 20px;
     border-style: none;
-    background-color: #F3F3F3;
+    background-color: #06203e;
+    color: #fff3ca;
 }
 
 .form-button {
@@ -198,19 +200,19 @@ main {
     height: 40px;
     border-style: none;
     border-radius: 50px;
-    border: 2px solid tomato;
-    background-color: white;
+    border: 2px solid #06203e;
+    background-color: #fff3ca;
     font-size: 1rem;
     font-weight: 800;
     font-family: "Red Hat Display", sans-serif;
-    color: tomato;
+    color: #06203e;
     cursor: pointer;
     transition: .7s all;
 }
 
 .form-button:hover {
-    background-color: tomato;
-    color: white;
+    background-color: #06203e;
+    color: #fff3ca;
 }
 
 .overlay-container {
@@ -220,7 +222,7 @@ main {
     width: 50%;
     height: 100%;
     transform: translateX(100%);
-    color: white;
+    color: #fff3ca;
     text-align: center;
     z-index: 10;
     transition: 1s;
@@ -235,24 +237,24 @@ main {
     justify-content: space-evenly;
     align-items: center;
     padding: 40px;
-    background-color: tomato;
+    background-color: #06203e;
     transition: 1s;
 }
 
 .form-title-light {
-    color: white;
+    color: #fff3ca;
 }
 
 .form-button-light {
-    border: 2px solid white;
-    color: white;
-    background-color: tomato;
+    border: 2px solid #fff3ca;
+    color: #fff3ca;
+    background-color: #06203e;
 }
 
 .form-button-light:hover {
-    border: 2px solid tomato;
-    background-color: white;
-    color: tomato;
+    border: 2px solid #06203e;
+    background-color: #fff3ca;
+    color: #06203e;
 }
 
 .login-container.move .overlay-container {
@@ -315,5 +317,130 @@ main {
         width: 100vw;
         height: 100vh;
         box-shadow: none;
+    }
+}
+
+/* FOOTER */
+
+.main-footer {
+    padding: 70px 0;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #fff3ca;
+}
+
+.main-footer ul {
+    list-style: none;
+}
+
+.main-footer h1 {
+    font-size: 22px;
+    line-height: 117%;
+    color: #06203e;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.main-footer h2 {
+    color: #06203e;
+    font-weight: bold;
+    font-family: "Permanent Marker", cursive;
+}
+
+.main-footer ul li a {
+    color: #06203e;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #2f2b53;
+    border-top: 1px solid #1d2742;
+    font-size: 17px;
+    padding: 15px 5px;
+    color: #06203e;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #06203e;
+}
+
+.logoinfo p {
+    color: #06203e;
+    font-size: 17px;
+    margin-top: 5px;
+}
+
+.contact-details {
+    margin-top: 20px;
+}
+
+.contact-details li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.contact-details li a {
+    text-decoration: none;
+    color: #06203e;
+    margin-left: 20px;
+}
+
+.contact-details .bi {
+    color: #06203e;
+    margin-right: 10px;
+}
+
+.sociallogos {
+    padding: 20px 0;
+}
+
+.sociallogos .logobox a {
+    padding: 0 10px;
+    text-decoration: none;
+    color: #06203e;
+    font-size: 22px;
+    transition: .3s all;
+}
+
+.sociallogos .logobox a:hover {
+    color: #1669c9;
+}
+
+.com ul li {
+    padding: 5px 0;
+    transition: .3s all;
+}
+
+.com ul li:hover {
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 749px) {
+
+    .main-footer {
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .info {
+        padding: 20px 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .main-footer {
+        grid-template-columns: 1fr;
+    }
+
+    .sociallogos {
+        padding: 20px 0;
+    }
+
+    .com {
+        padding: 20px 0;
     }
 }
