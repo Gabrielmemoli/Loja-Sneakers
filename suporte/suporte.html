@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,8 +19,8 @@
     <!-- FIM GOOGLE FONTS -->
 
     <title>Hanover Shoes</title>
-    <link rel="stylesheet" href="produto.css">
-    <script src="produto.js" defer></script>
+    <link rel="stylesheet" href="suporte.css">
+    <script src="suporte.js" defer></script>
 </head>
 <body>
 
@@ -42,26 +43,19 @@
 
     </nav> <!--NAV-->
 
-    <main>
-        <div class="content">
-            <div class="left-side">
-                <h1 id="produto-titulo"></h1>
-                <h1 id="produto-marca"></h1>
-                <h1 id="produto-sexo"></h1>
-                <p id="produto-descricao">
-                </p>
-                <span id="produto-preco"></span>
-                <a href="#">ADICIONAR AO CARRINHO</a>
-            </div>
+    <form action="https://formsubmit.com/ajax/gabrielalvesmemoli@gmail.com" method="post" data-form>
+        <h1>FORMULARIO SUPORTE</h1>
+        <p>Envie sua solicitação para que o nosso suporte possa entrar em contato.</p>
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" required>
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" required>
+        <label for="mensagem">Mensagem</label>
+        <textarea name="mensagem" id="mensagem" required></textarea>
+        <button type="submit" data-button>Enviar</button>
+    </form> <!--FORM-->
 
-            <div class="right-side">
-                <div class="img">
-                    <img id="produto-imagem" src="" alt="">
-                </div>
-            </div>
-        </div>
-    </main> <!--MAIN-->
-
+    
     <section id="footer">
         <div class="main-footer">
             <div class="logoinfo" data-aos="fade-up">
