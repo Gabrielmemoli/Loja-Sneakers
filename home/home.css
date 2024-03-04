@@ -25,7 +25,7 @@ nav {
     margin-top: 0px;
     align-items: center;
     color: #202020;
-    background-color: #fff3ca;
+    background-color: #06203e;
 }
 
 .logo img{
@@ -39,8 +39,8 @@ nav {
 
 .nav-itens>li>a {
     padding-left: 20px;
-    color: #06203e;
-    background-color: #fff3ca;
+    color: #fff3ca;
+    background-color: #06203e;
     text-decoration: none;
     font-size: 20px;
     transition: .5s all;
@@ -70,14 +70,18 @@ nav {
     color: #1669c9;
 }
 
+.cadastro {
+    display: none;
+}
+
 .login {
     padding: 10px 40px;
     font-size: 15px;
     border: none;
-    color: #fff3ca;
+    color: #06203e;
     font-weight: bold;
     border-radius: 5px;
-    background-color: #06203e;
+    background-color: #fff3ca;
     font-family: "Poppins", sans-serif;
     cursor: pointer;
     transition: .5s all;
@@ -85,13 +89,11 @@ nav {
 }
 
 .login:hover {
-    background-color: #0b3b72;
+    background-color: #06203e;
     transform: scale(1.1);
+    color: #fff3ca;
 }
 
-.cadastro {
-    display: none;
-}
 
 /* MAIN */
 
@@ -507,7 +509,7 @@ nav {
     padding: 70px 0;
     display: flex;
     justify-content: space-evenly;
-    background-color: #fff3ca;
+    background-color: #06203e;
     margin-top: 30px;
 }
 
@@ -518,19 +520,19 @@ nav {
 .main-footer h1 {
     font-size: 22px;
     line-height: 117%;
-    color: #06203e;
+    color: #fff3ca;
     margin-bottom: 10px;
     font-weight: bold;
 }
 
 .main-footer h2 {
-    color: #06203e;
+    color: #fff3ca;
     font-weight: bold;
     font-family: "Permanent Marker", cursive;
 }
 
 .main-footer ul li a {
-    color: #06203e;
+    color: #fff3ca;
     text-decoration: none;
 }
 
@@ -539,17 +541,17 @@ footer {
     border-top: 1px solid #1d2742;
     font-size: 17px;
     padding: 15px 5px;
-    color: #06203e;
+    color: #fff3ca;
     text-align: center;
 }
 
 footer a {
     text-decoration: none;
-    color: #06203e;
+    color: #fff3ca;
 }
 
 .logoinfo p {
-    color: #06203e;
+    color: #fff3ca;
     font-size: 17px;
     margin-top: 5px;
 }
@@ -565,12 +567,12 @@ footer a {
 
 .contact-details li a {
     text-decoration: none;
-    color: #06203e;
+    color: #fff3ca;
     margin-left: 20px;
 }
 
 .contact-details .bi {
-    color: #06203e;
+    color: #fff3ca;
     margin-right: 10px;
 }
 
@@ -581,7 +583,7 @@ footer a {
 .sociallogos .logobox a {
     padding: 0 10px;
     text-decoration: none;
-    color: #06203e;
+    color: #fff3ca;
     font-size: 22px;
     transition: .3s all;
 }
